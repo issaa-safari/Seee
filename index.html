@@ -13,7 +13,8 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0f0d0b;color:var(--cream);font-family:Poppins,system-ui,sans-serif}
 a{color:inherit;text-decoration:none}.shell{width:min(1180px,calc(100% - 36px));margin:auto}
 nav{position:fixed;z-index:40;top:0;left:0;right:0;background:rgba(16,13,11,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,175,55,.18)}
-.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.links{display:flex;align-items:center;gap:25px;font-size:13px}.links .cta{border:1px solid var(--gold);padding:11px 17px;border-radius:999px;color:var(--cream)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.brand img{height:46px;width:auto;filter:drop-shadow(0 2px 8px #0005)}
+.links{display:flex;align-items:center;gap:25px;font-size:13px}.links .cta{border:1px solid var(--gold);padding:11px 17px;border-radius:999px;color:var(--cream)}
 .hero{min-height:100svh;padding-top:76px;position:relative;overflow:hidden;background:#120f0c}
 .hero-media{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,11,9,.96) 0%,rgba(14,11,9,.76) 43%,rgba(14,11,9,.12) 75%),url('assets/fole-1.jpg') center/cover no-repeat}
 .hero-inner{min-height:calc(100svh - 76px);position:relative;z-index:2;display:flex;align-items:center}.hero-copy{max-width:700px;padding:90px 0}
@@ -34,9 +35,9 @@ h2{font:600 clamp(40px,5.2vw,66px)/1.04 "Playfair Display",serif;letter-spacing:
 .partner-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:54px;align-items:start}.requirements{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px}.req{padding:14px;border:1px solid rgba(255,255,255,.22);border-radius:12px;font-size:12px}
 form{background:var(--cream);color:var(--charcoal);padding:28px;border-radius:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}input,select,textarea{width:100%;border:1px solid #d7c9ba;background:#fff;padding:13px 14px;border-radius:10px;font:inherit;font-size:13px}textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}button{cursor:pointer}
 .brand-band{padding:38px 0;background:var(--gold);color:#20150e}.brand-band .shell{display:flex;align-items:center;justify-content:space-between;gap:28px}.band-title{font:600 32px "Playfair Display",serif}
-footer{padding:54px 0 28px;background:#0c0a08;color:#a99b8f}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.foot h4{color:var(--cream);font-size:13px}.foot a{display:block;font-size:12px;margin:9px 0}.copy{border-top:1px solid #2b241f;margin-top:35px;padding-top:20px;font-size:11px}
+footer{padding:54px 0 28px;background:#0c0a08;color:#a99b8f}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.foot img{height:58px}.foot h4{color:var(--cream);font-size:13px}.foot a{display:block;font-size:12px;margin:9px 0}.copy{border-top:1px solid #2b241f;margin-top:35px;padding-top:20px;font-size:11px}
 @media(max-width:860px){.links a:not(.cta){display:none}.grid2,.partner-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.menu-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-column:1/-1;height:460px;grid-row:auto}.brand-band .shell{align-items:flex-start;flex-direction:column}.formgrid{grid-template-columns:1fr}.full{grid-column:1}.photo{min-height:400px}}
-@media(max-width:540px){.shell{width:calc(100% - 28px)}.navin{height:68px}.hero{padding-top:68px}.hero-inner{min-height:calc(100svh - 68px)}h1{font-size:52px}.hero p{font-size:16px}.cards,.menu-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img,.gallery img:first-child{height:300px}.requirements{grid-template-columns:1fr}section{padding:72px 0}}
+@media(max-width:540px){.shell{width:calc(100% - 28px)}.brand img{height:40px}.navin{height:68px}.hero{padding-top:68px}.hero-inner{min-height:calc(100svh - 68px)}h1{font-size:52px}.hero p{font-size:16px}.cards,.menu-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img,.gallery img:first-child{height:300px}.requirements{grid-template-columns:1fr}section{padding:72px 0}}
 </style>
 </head>
 <body>
@@ -53,59 +54,16 @@ footer{padding:54px 0 28px;background:#0c0a08;color:#a99b8f}.foot{display:grid;g
 <h2>Built for modern mobility.</h2>
 <p class="lead">Exceptional coffee should fit naturally into the customer’s daily journey. FOLÉ combines the visual appeal of a premium café with the speed and accessibility of a compact drive-through format.</p>
 <div class="pillrow"><span class="pill">Premium</span><span class="pill">Convenient</span><span class="pill">Compact</span><span class="pill">Consistent</span></div>
-</div><div class="photo"><img src="assets/fole-2.jpg" alt="FOLÉ café brand presentation"></div></div></section>
+</div><div class="photo"><img src="assets/fole-1.jpg" alt="FOLÉ café brand presentation"></div></div></section>
 <section class="dark"><div class="shell">
 <div class="eyebrow">02 / Purpose</div><h2>One standard.<br>Every location.</h2>
 <p class="lead" style="max-width:760px">Our mission is to make premium coffee, fresh bakery and thoughtful service convenient, consistent and accessible across the places people already move through every day.</p>
-<div class="cards">
-<div class="card"><div class="num">01</div><h3>Quality</h3><p>We protect the cup, the food and the details.</p></div>
-<div class="card"><div class="num">02</div><h3>Speed</h3><p>Convenience is engineered into the service flow.</p></div>
-<div class="card"><div class="num">03</div><h3>Consistency</h3><p>Standards matter more than one-off excellence.</p></div>
-<div class="card"><div class="num">04</div><h3>Hospitality</h3><p>Fast service should still feel warm and human.</p></div>
-<div class="card"><div class="num">05</div><h3>Design</h3><p>Every touchpoint should strengthen the brand.</p></div>
-<div class="card"><div class="num">06</div><h3>Discipline</h3><p>Simple systems make multi-site growth possible.</p></div>
-</div></div></section>
-<section class="cream" id="offer"><div class="shell">
-<div class="eyebrow" style="color:var(--espresso)">03 / Our Offer</div><h2>Coffee. Bakery.<br>Patisserie.</h2>
-<p class="lead" style="max-width:720px">A focused food-and-beverage platform designed for high-frequency, convenient occasions.</p>
-<div class="menu-grid">
-<div class="menu-card"><small>01</small><h3>Coffee & Beverages</h3><p>Espresso-based coffee, iced coffee, tea and signature beverages.</p></div>
-<div class="menu-card"><small>02</small><h3>Bakery & Patisserie</h3><p>Croissants, pastries, cakes and selected sweet items.</p></div>
-<div class="menu-card"><small>03</small><h3>Grab & Go</h3><p>Selected sandwiches, breakfast items and light bites.</p></div>
-<div class="menu-card"><small>04</small><h3>Drive-Through</h3><p>Clear ordering, fast production and smooth collection.</p></div>
-</div></div></section>
-<section class="dark" id="experience"><div class="shell">
-<div class="eyebrow">04 / Experience</div><h2>The FOLÉ customer journey.</h2>
-<p class="lead">Designed to make a premium purchase feel effortless — see, order, craft, collect, return.</p>
-<div class="gallery">
-<img src="assets/fole-3.jpg" alt="FOLÉ kiosk visual">
-<img src="assets/fole-6.jpg" alt="FOLÉ branding visual">
-<img src="assets/fole-4.jpg" alt="FOLÉ interior concept">
-<img src="assets/fole-5.jpg" alt="FOLÉ brand identity board">
-<img src="assets/fole-1.jpg" alt="FOLÉ drive-through coffee concept">
-</div></div></section>
-<section class="cream" id="locations"><div class="shell grid2"><div class="photo"><img src="assets/fole-3.jpg" alt="FOLÉ drive-through kiosk"></div><div>
-<div class="eyebrow" style="color:var(--espresso)">05 / Location Value</div><h2>Small footprint.<br>Strong presence.</h2>
-<p class="lead">A compact premium coffee brand can create value beyond the transaction itself: a premium amenity, stronger site image, productive use of space, repeat traffic and complementary activity.</p>
-<div class="pillrow"><span class="pill">Petrol Stations</span><span class="pill">Shopping Centres</span><span class="pill">Business Districts</span><span class="pill">Office Parks</span><span class="pill">Mixed-Use</span><span class="pill">Commuter Corridors</span></div>
-</div></div></section>
-<section class="espresso" id="partners"><div class="shell partner-grid"><div>
-<div class="eyebrow" style="color:#f0d990">06 / Property Owners</div><h2>Turn compact spaces into productive retail.</h2>
-<p class="lead">FOLÉ is seeking visible commercial locations in petrol stations, shopping centres, office parks, mixed-use developments and commuter corridors.</p>
-<div class="requirements"><div class="req">Approx. 15–40 m² usable area</div><div class="req">Strong visibility</div><div class="req">Safe vehicle / pedestrian access</div><div class="req">Water & electricity feasible</div><div class="req">High traffic potential</div><div class="req">Premium commercial environment</div></div>
-</div>
-<form id="siteForm"><h3 style="font:600 30px 'Playfair Display',serif;margin-bottom:7px">Offer us a location</h3><p style="font-size:13px;color:#75675d;margin-top:0">Share the basic details of your site.</p>
-<div class="formgrid">
-<input required placeholder="Your name"><input placeholder="Company">
-<input required placeholder="Phone number"><input type="email" placeholder="Email address">
-<input required placeholder="Location / area"><select><option>Property type</option><option>Petrol station</option><option>Shopping centre</option><option>Office / commercial</option><option>Roadside / commuter corridor</option><option>Other</option></select>
-<input placeholder="Approx. available space (m²)"><select><option>Vehicle access</option><option>Drive-through possible</option><option>Walk-up / parking access</option><option>Not sure</option></select>
-<textarea class="full" placeholder="Tell us about the site"></textarea>
-<button class="btn gold full">Submit Location</button>
-</div><div id="thanks" style="display:none;margin-top:12px;padding:12px;background:#e7efe1;border-radius:9px;font-size:12px">Thank you. Your site enquiry has been captured in this preview.</div></form>
-</div></section>
+<div class="cards"><div class="card"><div class="num">01</div><h3>Quality</h3><p>We protect the cup, the food and the details.</p></div><div class="card"><div class="num">02</div><h3>Speed</h3><p>Convenience is engineered into the service flow.</p></div><div class="card"><div class="num">03</div><h3>Consistency</h3><p>Standards matter more than one-off excellence.</p></div><div class="card"><div class="num">04</div><h3>Hospitality</h3><p>Fast service should still feel warm and human.</p></div><div class="card"><div class="num">05</div><h3>Design</h3><p>Every touchpoint should strengthen the brand.</p></div><div class="card"><div class="num">06</div><h3>Discipline</h3><p>Simple systems make multi-site growth possible.</p></div></div></div></section>
+<section class="cream" id="offer"><div class="shell"><div class="eyebrow" style="color:var(--espresso)">03 / Our Offer</div><h2>Coffee. Bakery.<br>Patisserie.</h2><p class="lead" style="max-width:720px">A focused food-and-beverage platform designed for high-frequency, convenient occasions.</p><div class="menu-grid"><div class="menu-card"><small>01</small><h3>Coffee & Beverages</h3><p>Espresso-based coffee, iced coffee, tea and signature beverages.</p></div><div class="menu-card"><small>02</small><h3>Bakery & Patisserie</h3><p>Croissants, pastries, cakes and selected sweet items.</p></div><div class="menu-card"><small>03</small><h3>Grab & Go</h3><p>Selected sandwiches, breakfast items and light bites.</p></div><div class="menu-card"><small>04</small><h3>Drive-Through</h3><p>Clear ordering, fast production and smooth collection.</p></div></div></div></section>
+<section class="dark" id="experience"><div class="shell"><div class="eyebrow">04 / Experience</div><h2>The FOLÉ customer journey.</h2><p class="lead">Designed to make a premium purchase feel effortless — see, order, craft, collect, return.</p><div class="gallery"><img src="assets/fole-1.jpg" alt="FOLÉ kiosk visual"><img src="assets/fole-1.jpg" alt="FOLÉ branding visual"><img src="assets/fole-1.jpg" alt="FOLÉ interior concept"><img src="assets/fole-1.jpg" alt="FOLÉ brand identity board"><img src="assets/fole-1.jpg" alt="FOLÉ drive-through coffee concept"></div></div></section>
+<section class="cream" id="locations"><div class="shell grid2"><div class="photo"><img src="assets/fole-1.jpg" alt="FOLÉ drive-through kiosk"></div><div><div class="eyebrow" style="color:var(--espresso)">05 / Location Value</div><h2>Small footprint.<br>Strong presence.</h2><p class="lead">A compact premium coffee brand can create value beyond the transaction itself: a premium amenity, stronger site image, productive use of space, repeat traffic and complementary activity.</p><div class="pillrow"><span class="pill">Petrol Stations</span><span class="pill">Shopping Centres</span><span class="pill">Business Districts</span><span class="pill">Office Parks</span><span class="pill">Mixed-Use</span><span class="pill">Commuter Corridors</span></div></div></div></section>
+<section class="espresso" id="partners"><div class="shell partner-grid"><div><div class="eyebrow" style="color:#f0d990">06 / Property Owners</div><h2>Turn compact spaces into productive retail.</h2><p class="lead">FOLÉ is seeking visible commercial locations in petrol stations, shopping centres, office parks, mixed-use developments and commuter corridors.</p><div class="requirements"><div class="req">Approx. 15–40 m² usable area</div><div class="req">Strong visibility</div><div class="req">Safe vehicle / pedestrian access</div><div class="req">Water & electricity feasible</div><div class="req">High traffic potential</div><div class="req">Premium commercial environment</div></div></div><form id="siteForm"><h3 style="font:600 30px 'Playfair Display',serif;margin-bottom:7px">Offer us a location</h3><p style="font-size:13px;color:#75675d;margin-top:0">Share the basic details of your site.</p><div class="formgrid"><input required placeholder="Your name"><input placeholder="Company"><input required placeholder="Phone number"><input type="email" placeholder="Email address"><input required placeholder="Location / area"><select><option>Property type</option><option>Petrol station</option><option>Shopping centre</option><option>Office / commercial</option><option>Roadside / commuter corridor</option><option>Other</option></select><input placeholder="Approx. available space (m²)"><select><option>Vehicle access</option><option>Drive-through possible</option><option>Walk-up / parking access</option><option>Not sure</option></select><textarea class="full" placeholder="Tell us about the site"></textarea><button class="btn gold full">Submit Location</button></div><div id="thanks" style="display:none;margin-top:12px;padding:12px;background:#e7efe1;border-radius:9px;font-size:12px">Thank you. Your site enquiry has been captured in this preview.</div></form></div></section>
 <div class="brand-band"><div class="shell"><div><div class="kicker" style="color:#2b1c12">Growth Vision</div><div class="band-title">One brand. Many convenient stops.</div></div><a href="#partners" class="btn" style="background:#1f1f1f;color:#fff">Bring FOLÉ to your location</a></div></div>
 <footer><div class="shell"><div class="foot"><div><div style="font-family:Playfair Display,serif;font-weight:600;font-size:34px;letter-spacing:.08em;color:#fff">FOLÉ</div><p style="max-width:440px;font-size:12px;line-height:1.7">Premium drive-through coffee, bakery & patisserie. Kenya.</p></div><div><h4>Explore</h4><a href="#brand">Our Brand</a><a href="#offer">Our Offer</a><a href="#experience">Experience</a></div><div><h4>Business</h4><a href="#locations">Locations</a><a href="#partners">Offer a Location</a></div></div><div class="copy">© 2026 FOLÉ CAFÉ · ELEVATING EVERY STOP.</div></div></footer>
 <script>document.getElementById('siteForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('thanks').style.display='block';e.currentTarget.querySelector('button').textContent='Location received ✓'})</script>
-</body>
-</html>
+</body></html>
